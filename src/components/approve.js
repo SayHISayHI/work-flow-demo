@@ -30,7 +30,7 @@ class ApproveView extends RectNode {
       }
 
       getShape() {
-        const { model, graphModel } = this.props;
+        const { model } = this.props;
         const { x, y, width, height, radius } = model;
         const style = model.getNodeStyle();
         return h("g", {}, [

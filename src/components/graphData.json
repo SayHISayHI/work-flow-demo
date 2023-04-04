@@ -1,0 +1,290 @@
+{
+    "nodes": [
+        {
+            "id": "df74e268-663f-4e75-9b5f-d14ad281fb2e",
+            "type": "start",
+            "x": 500,
+            "y": 60,
+            "properties": {},
+            "text": {
+                "x": 500,
+                "y": 60,
+                "value": "开始"
+            }
+        },
+        {
+            "id": "dc4fca59-f761-4f52-8785-3c3a6af24be0",
+            "type": "rect",
+            "x": 500,
+            "y": 160,
+            "properties": {}
+        },
+        {
+            "id": "4d6df91e-af8f-4d5d-87f5-bef7b44dc356",
+            "type": "approve",
+            "x": 500,
+            "y": 280,
+            "properties": {}
+        },
+        {
+            "id": "5371ef1a-9c8c-4748-a080-c0719cf09fb0",
+            "type": "gateway",
+            "x": 500,
+            "y": 400,
+            "properties": {}
+        },
+        {
+            "id": "72991916-1d5d-4f48-af11-7eb2a49cd7c0",
+            "type": "rect",
+            "x": 500,
+            "y": 540,
+            "properties": {}
+        },
+        {
+            "id": "94b5d818-2b33-4d79-ad67-8afde9d02a06",
+            "type": "end",
+            "x": 500,
+            "y": 660,
+            "properties": {},
+            "text": {
+                "x": 500,
+                "y": 660,
+                "value": "结束"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "id": "d442f1a0-4b3b-471c-bb4f-58648526c2ea",
+            "type": "polyline",
+            "sourceNodeId": "df74e268-663f-4e75-9b5f-d14ad281fb2e",
+            "targetNodeId": "dc4fca59-f761-4f52-8785-3c3a6af24be0",
+            "startPoint": {
+                "x": 500,
+                "y": 88
+            },
+            "endPoint": {
+                "x": 500,
+                "y": 120
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 500,
+                    "y": 88
+                },
+                {
+                    "x": 500,
+                    "y": 118
+                },
+                {
+                    "x": 500,
+                    "y": 118
+                },
+                {
+                    "x": 500,
+                    "y": 90
+                },
+                {
+                    "x": 500,
+                    "y": 90
+                },
+                {
+                    "x": 500,
+                    "y": 120
+                }
+            ]
+        },
+        {
+            "id": "925ba2a7-dadb-44f3-96fb-3161db2a55f1",
+            "type": "polyline",
+            "sourceNodeId": "dc4fca59-f761-4f52-8785-3c3a6af24be0",
+            "targetNodeId": "4d6df91e-af8f-4d5d-87f5-bef7b44dc356",
+            "startPoint": {
+                "x": 500,
+                "y": 200
+            },
+            "endPoint": {
+                "x": 500,
+                "y": 240
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 500,
+                    "y": 200
+                },
+                {
+                    "x": 500,
+                    "y": 230
+                },
+                {
+                    "x": 500,
+                    "y": 230
+                },
+                {
+                    "x": 500,
+                    "y": 210
+                },
+                {
+                    "x": 500,
+                    "y": 210
+                },
+                {
+                    "x": 500,
+                    "y": 240
+                }
+            ]
+        },
+        {
+            "id": "74fbabe8-a6e0-461d-9b73-13e2b5c0387a",
+            "type": "polyline",
+            "sourceNodeId": "4d6df91e-af8f-4d5d-87f5-bef7b44dc356",
+            "targetNodeId": "5371ef1a-9c8c-4748-a080-c0719cf09fb0",
+            "startPoint": {
+                "x": 500,
+                "y": 320
+            },
+            "endPoint": {
+                "x": 500,
+                "y": 370
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 500,
+                    "y": 320
+                },
+                {
+                    "x": 500,
+                    "y": 350
+                },
+                {
+                    "x": 500,
+                    "y": 350
+                },
+                {
+                    "x": 500,
+                    "y": 340
+                },
+                {
+                    "x": 500,
+                    "y": 340
+                },
+                {
+                    "x": 500,
+                    "y": 370
+                }
+            ]
+        },
+        {
+            "id": "ec6c2e05-b3a2-48fd-a797-aa752f8653d5",
+            "type": "polyline",
+            "sourceNodeId": "72991916-1d5d-4f48-af11-7eb2a49cd7c0",
+            "targetNodeId": "94b5d818-2b33-4d79-ad67-8afde9d02a06",
+            "startPoint": {
+                "x": 500,
+                "y": 580
+            },
+            "endPoint": {
+                "x": 500,
+                "y": 632
+            },
+            "properties": {},
+            "pointsList": [
+                {
+                    "x": 500,
+                    "y": 580
+                },
+                {
+                    "x": 500,
+                    "y": 610
+                },
+                {
+                    "x": 500,
+                    "y": 610
+                },
+                {
+                    "x": 500,
+                    "y": 602
+                },
+                {
+                    "x": 500,
+                    "y": 602
+                },
+                {
+                    "x": 500,
+                    "y": 632
+                }
+            ]
+        },
+        {
+            "id": "38edbb81-ae79-4fb2-a4e3-90a28e89d460",
+            "type": "polyline",
+            "sourceNodeId": "5371ef1a-9c8c-4748-a080-c0719cf09fb0",
+            "targetNodeId": "dc4fca59-f761-4f52-8785-3c3a6af24be0",
+            "startPoint": {
+                "x": 560,
+                "y": 400
+            },
+            "endPoint": {
+                "x": 550,
+                "y": 160
+            },
+            "properties": {},
+            "text": {
+                "x": 603,
+                "y": 295,
+                "value": "no"
+            },
+            "pointsList": [
+                {
+                    "x": 560,
+                    "y": 400
+                },
+                {
+                    "x": 603,
+                    "y": 400
+                },
+                {
+                    "x": 603,
+                    "y": 160
+                },
+                {
+                    "x": 550,
+                    "y": 160
+                }
+            ]
+        },
+        {
+            "id": "d3ffa9ff-2779-454a-9074-f6105660440a",
+            "type": "polyline",
+            "sourceNodeId": "5371ef1a-9c8c-4748-a080-c0719cf09fb0",
+            "targetNodeId": "72991916-1d5d-4f48-af11-7eb2a49cd7c0",
+            "startPoint": {
+                "x": 500,
+                "y": 430
+            },
+            "endPoint": {
+                "x": 500,
+                "y": 500
+            },
+            "properties": {},
+            "text": {
+                "x": 500,
+                "y": 457,
+                "value": "yes"
+            },
+            "pointsList": [
+                {
+                    "x": 500,
+                    "y": 430
+                },
+                {
+                    "x": 500,
+                    "y": 500
+                }
+            ]
+        }
+    ]
+}

@@ -1,5 +1,7 @@
 <template>
-    <div class="flow-view" ref="flowview"></div>
+    <div class="flow-view" ref="flowview">
+        <button class="button" @click="onClick">导出</button>
+    </div>
 </template>
 
 <script>
@@ -13,9 +15,20 @@ import End from './end';
 import Start from './start';
 import Gateway from './gateway';
 
+import graphJSON from './graphData.json'
+// const graphJSON = require('./graphData.json')
+
+// fetch('./graphData.json').then(res => {
+//     console.log('res :>> ', res);
+// })
+
+console.log('graphJSON :>> ', graphJSON);
+
 LogicFlow.use(Menu);
 LogicFlow.use(DndPanel);
 LogicFlow.use(SelectionSelect);
+
+let lf = undefined
 
 export default {
     name: 'LogicFlow',
@@ -25,7 +38,7 @@ export default {
         }
     },
     mounted() {
-        const lf = new LogicFlow({
+        lf = new LogicFlow({
             container: this.$refs.flowview,
             grid: true,
             keyboard: {
@@ -95,26 +108,25 @@ export default {
             },
         ])
 
-        lf.render({
-            nodes: [
-                {
-                    type: 'approve',
-                    x: 100,
-                    y: 100
-                },
-                {
-                    type: 'gateway',
-                    x: 200,
-                    y: 100
-                }
-            ]
-        })
-    }
+        lf.render(graphJSON)
+    },
+    methods: {
+        onClick() {
+            console.log('data :>> ', JSON.stringify(lf.getGraphData()));
+            alert('已导出json，控制台查看')
+        }
+    },
 }
 
 </script>
 
 <style>
+.button {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+
 .flow-view {
     min-width: 100vm;
     height: 100vh;
